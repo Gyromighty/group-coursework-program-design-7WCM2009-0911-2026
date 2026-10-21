@@ -15,7 +15,7 @@ F_0 = 0\\
 F_1 = 1
 $$
 
-There is also a shortcut that makes it computationally quicker to find a Fibonacci sum up to the index `n`:
+There is also a shortcut that makes it computationally easier to find a Fibonacci sum up to the index `n`:
 
 $$
 \sum_{i=0}^n F_i = F_{n+2} - 1
