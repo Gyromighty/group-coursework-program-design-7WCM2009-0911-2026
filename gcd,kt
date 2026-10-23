@@ -1,0 +1,24 @@
+// abs imported to handle negative input
+import kotlin.math.abs
+
+fun gcd(num1: Int, num2: Int): Int {
+    // handle o input edge case
+    if (num1 == 0 || num2 == 0) {
+        println("Greatest Common Divisor for 0 is undefined.")
+
+    }
+    else {
+        var a = abs(num1)
+        var b = abs(num2)
+
+        // gcd logic - replace larger number with smaller number and smaller number with modulus until modulus equals zero
+        while (b != 0) {
+            val diff = a % b
+            a = b
+            b = diff
+        }
+
+        return a
+    }
+    return 0
+}
